@@ -12,7 +12,6 @@ def get_airport_info(icao_code):
     )
     cursor = connection.cursor()
 
-
     query = "select * from airport where ident = %s"
     cursor.execute(query, (icao_code,))
     result = cursor.fetchone()
