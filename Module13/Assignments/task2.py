@@ -6,8 +6,8 @@ app = Flask(__name__)
 def get_airport_info(icao_code):
     connection = mysql.connector.connect(
         host="localhost",
-        user="your_username",
-        password="your_password",
+        user="root",
+        password="password",
         database="flight_game"
     )
     cursor = connection.cursor()
